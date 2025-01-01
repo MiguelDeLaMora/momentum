@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		844755E92D25BDAF00BAD40E /* MomentumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755E82D25BDAF00BAD40E /* MomentumApp.swift */; };
-		844755EB2D25BDAF00BAD40E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755EA2D25BDAF00BAD40E /* ContentView.swift */; };
+		844755EB2D25BDAF00BAD40E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755EA2D25BDAF00BAD40E /* WelcomeView.swift */; };
 		844755ED2D25BDB200BAD40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844755EC2D25BDB200BAD40E /* Assets.xcassets */; };
 		844755F02D25BDB200BAD40E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844755EF2D25BDB200BAD40E /* Preview Assets.xcassets */; };
 		844755FA2D25BDB200BAD40E /* MomentumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755F92D25BDB200BAD40E /* MomentumTests.swift */; };
 		844756042D25BDB200BAD40E /* MomentumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844756032D25BDB200BAD40E /* MomentumUITests.swift */; };
 		844756062D25BDB200BAD40E /* MomentumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844756052D25BDB200BAD40E /* MomentumUITestsLaunchTests.swift */; };
+		844756132D25C9A000BAD40E /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844756122D25C9A000BAD40E /* HabitListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		844755E52D25BDAF00BAD40E /* Momentum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momentum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844755E82D25BDAF00BAD40E /* MomentumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumApp.swift; sourceTree = "<group>"; };
-		844755EA2D25BDAF00BAD40E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		844755EA2D25BDAF00BAD40E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		844755EC2D25BDB200BAD40E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844755EF2D25BDB200BAD40E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		844755F52D25BDB200BAD40E /* MomentumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		844755FF2D25BDB200BAD40E /* MomentumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844756032D25BDB200BAD40E /* MomentumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumUITests.swift; sourceTree = "<group>"; };
 		844756052D25BDB200BAD40E /* MomentumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		844756122D25C9A000BAD40E /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				844755E82D25BDAF00BAD40E /* MomentumApp.swift */,
-				844755EA2D25BDAF00BAD40E /* ContentView.swift */,
+				844755EA2D25BDAF00BAD40E /* WelcomeView.swift */,
+				844756122D25C9A000BAD40E /* HabitListView.swift */,
 				844755EC2D25BDB200BAD40E /* Assets.xcassets */,
 				844755EE2D25BDB200BAD40E /* Preview Content */,
 			);
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844755EB2D25BDAF00BAD40E /* ContentView.swift in Sources */,
+				844756132D25C9A000BAD40E /* HabitListView.swift in Sources */,
+				844755EB2D25BDAF00BAD40E /* WelcomeView.swift in Sources */,
 				844755E92D25BDAF00BAD40E /* MomentumApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
