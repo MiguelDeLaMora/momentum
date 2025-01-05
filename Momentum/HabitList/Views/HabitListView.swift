@@ -30,10 +30,11 @@ struct HabitListView: View {
                 Text("Your Habits, Your Progress")
                     .font(.title)
                     .fontWeight(.bold)
+                    .padding(.top, 30)
                 
                 VStack (alignment: .leading, spacing: 5) {
                     // Today´s date
-                    Text("Jan 1st, 2025")
+                    Text(viewModel.dateString)
                         .font(.title2)
                         .fontWeight(.semibold)
                         .foregroundStyle(colorScheme == .light ? lightColors[2] : darkColors[2])

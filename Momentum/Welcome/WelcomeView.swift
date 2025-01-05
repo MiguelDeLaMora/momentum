@@ -47,53 +47,51 @@ struct WelcomeView: View {
         }
     }
     var body: some View {
-        ZStack{
-            // MARK: Background
-            ZStack {
-                DistortedCircle()
-                    .foregroundStyle(colorScheme == .light ? lightColors[0] : darkColors[0])
-                    .frame(width: screenWidth / 1.3, height: screenWidth / 1.3)
-                    .offset(x: -screenWidth / 2, y: -screenHeight / 2)
+        NavigationView{
+            ZStack{
+                // MARK: Background
+                ZStack {
+                    DistortedCircle()
+                        .foregroundStyle(colorScheme == .light ? lightColors[0] : darkColors[0])
+                        .frame(width: screenWidth / 1.3, height: screenWidth / 1.3)
+                        .offset(x: -screenWidth / 2, y: -screenHeight / 2)
+                    
+                    DistortedCircle()
+                        .foregroundStyle(colorScheme == .light ? lightColors[1] : darkColors[1])
+                        .frame(width: screenWidth / 1.1, height: screenWidth / 1.1)
+                        .offset(x: screenWidth / 3, y: screenHeight / 3)
+                    
+                    DistortedCircle()
+                        .foregroundStyle(colorScheme == .light ? lightColors[2] : darkColors[2])
+                        .frame(width: screenWidth / 1.7, height: screenWidth / 1.7)
+                        .offset(x: screenWidth / 4, y: -screenHeight / 4)
+                }
                 
-                DistortedCircle()
-                    .foregroundStyle(colorScheme == .light ? lightColors[1] : darkColors[1])
-                    .frame(width: screenWidth / 1.1, height: screenWidth / 1.1)
-                    .offset(x: screenWidth / 3, y: screenHeight / 3)
                 
-                DistortedCircle()
-                    .foregroundStyle(colorScheme == .light ? lightColors[2] : darkColors[2])
-                    .frame(width: screenWidth / 1.7, height: screenWidth / 1.7)
-                    .offset(x: screenWidth / 4, y: -screenHeight / 4)
-            }
-            
-            
-            
-            // MARK: Content
-            VStack (alignment: .leading, spacing: 15) {
                 
-                // App Name
-                Text("Momentum")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                
-                // Slogan
-                Text("The Habit Tracker that will change your life")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                
-                // Get Started Button
-                Button(
-                    action: {
-                        
-                    },
-                    label: {
-                    Text("Get Started")
-                            .foregroundStyle(.white)
-                            .padding()
-                            .fontWeight(.bold)
-                            .background(.orange)
-                            .cornerRadius(10)
-                })
+                // MARK: Content
+                VStack (alignment: .leading, spacing: 15) {
+                    
+                    // App Name
+                    Text("Momentum")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                    
+                    // Slogan
+                    Text("The Habit Tracker that will change your life")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    
+                    // Get Started Button
+                    NavigationLink (destination: HabitListView().navigationBarBackButtonHidden()){
+                            Text("Get Started")
+                                .foregroundStyle(.white)
+                                .padding()
+                                .fontWeight(.bold)
+                                .background(.orange)
+                                .cornerRadius(10)
+                    }
+                }
             }
         }
     }
