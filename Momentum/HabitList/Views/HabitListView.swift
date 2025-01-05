@@ -12,6 +12,7 @@ import SwiftUI
 struct HabitListView: View {
     
     @StateObject var viewModel = HabitListViewModel()
+    @State var showAddHabitForm = false
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -65,7 +66,9 @@ struct HabitListView: View {
                 HStack {
                     Spacer()
                     Button(
-                        action: {},
+                        action: {
+                            showAddHabitForm.toggle()
+                        },
                         label: {
                             Image(systemName: "plus.circle.fill")
                                 .font(Font.system(size: 50))
@@ -78,6 +81,10 @@ struct HabitListView: View {
             }
             .padding()
         }
+        .sheet(isPresented: $showAddHabitForm, onDismiss: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=On Dismiss@*/{ }/*@END_MENU_TOKEN@*/, content: {
+            AddHabitView()
+                .presentationDragIndicator(.visible)
+        })
     }
 }
 
