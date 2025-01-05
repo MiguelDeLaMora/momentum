@@ -49,51 +49,14 @@ struct HabitListView: View {
                 
                 // Button
                 
-                LazyVStack{
+                LazyVStack (spacing: 20) {
                     ForEach (viewModel.habits) { habit in
+                        HabitButtonView(habit: habit)
                     }
                 }
                 
                 
-                Button(
-                    action: {
-                        
-                    }, 
-                    label: {
-                        HStack (alignment: .center, spacing: 15) {
-                            // Emoji
-                            Text("🧘")
-                                .font(Font.system(size: 60))
-                                .padding(.leading)
-                            // Habit Description (Title, description, streak)
-                            VStack (alignment: .leading) {
-                                Text("Habit Title")
-                                    .foregroundStyle(colorScheme == .light ? lightColors[1] : darkColors[1])
-                                    .font(.title2)
-                                    .fontWeight(.semibold)
-                                
-                                Text("Habit Description")
-                                    .foregroundStyle(Color(.label))
-                                    .font(.subheadline)
-                                
-                                Text("1 day streak")
-                                    .foregroundStyle(Color(.label))
-                                    .font(.subheadline)
-                            }
-                            
-                            Spacer()
-                            
-                            Image(systemName: "checkmark.circle.fill")
-                                .font(Font.system(size: 50))
-                                .foregroundStyle(colorScheme == .light ? lightColors[1] : darkColors[1])
-                                .padding(.trailing)
-                        }
-                        .padding()
-                        .background(Color(.secondarySystemBackground))
-                        .cornerRadius(15)
-                        .shadow(color:Color(.systemGray) ,radius: 3)
-                    }
-                )
+                
                 
                 
                 // Add Habit Button

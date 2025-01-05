@@ -10,6 +10,8 @@
 		842BF2292D2A0B7400A01101 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF2282D2A0B7400A01101 /* DeveloperPreview.swift */; };
 		842BF22B2D2A0B9100A01101 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF22A2D2A0B9100A01101 /* Habit.swift */; };
 		842BF22D2D2A0BA100A01101 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF22C2D2A0BA100A01101 /* HabitListViewModel.swift */; };
+		842BF22F2D2A0F8900A01101 /* HabitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF22E2D2A0F8900A01101 /* HabitButtonView.swift */; };
+		842BF2342D2A10AD00A01101 /* HabitButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF2332D2A10AD00A01101 /* HabitButtonViewModel.swift */; };
 		844755E92D25BDAF00BAD40E /* MomentumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755E82D25BDAF00BAD40E /* MomentumApp.swift */; };
 		844755EB2D25BDAF00BAD40E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755EA2D25BDAF00BAD40E /* WelcomeView.swift */; };
 		844755ED2D25BDB200BAD40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844755EC2D25BDB200BAD40E /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		842BF2282D2A0B7400A01101 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		842BF22A2D2A0B9100A01101 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		842BF22C2D2A0BA100A01101 /* HabitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewModel.swift; sourceTree = "<group>"; };
+		842BF22E2D2A0F8900A01101 /* HabitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonView.swift; sourceTree = "<group>"; };
+		842BF2332D2A10AD00A01101 /* HabitButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonViewModel.swift; sourceTree = "<group>"; };
 		844755E52D25BDAF00BAD40E /* Momentum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momentum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844755E82D25BDAF00BAD40E /* MomentumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumApp.swift; sourceTree = "<group>"; };
 		844755EA2D25BDAF00BAD40E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -98,9 +102,9 @@
 		842BF2262D2A0B0600A01101 /* HabitList */ = {
 			isa = PBXGroup;
 			children = (
-				844756122D25C9A000BAD40E /* HabitListView.swift */,
-				842BF22A2D2A0B9100A01101 /* Habit.swift */,
-				842BF22C2D2A0BA100A01101 /* HabitListViewModel.swift */,
+				842BF2322D2A105A00A01101 /* Views */,
+				842BF2312D2A104300A01101 /* ViewModels */,
+				842BF2302D2A103200A01101 /* Models */,
 			);
 			path = HabitList;
 			sourceTree = "<group>";
@@ -111,6 +115,32 @@
 				842BF2282D2A0B7400A01101 /* DeveloperPreview.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		842BF2302D2A103200A01101 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				842BF22A2D2A0B9100A01101 /* Habit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		842BF2312D2A104300A01101 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				842BF22C2D2A0BA100A01101 /* HabitListViewModel.swift */,
+				842BF2332D2A10AD00A01101 /* HabitButtonViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		842BF2322D2A105A00A01101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				844756122D25C9A000BAD40E /* HabitListView.swift */,
+				842BF22E2D2A0F8900A01101 /* HabitButtonView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		844755DC2D25BDAF00BAD40E = {
@@ -306,7 +336,9 @@
 				842BF2292D2A0B7400A01101 /* DeveloperPreview.swift in Sources */,
 				842BF22D2D2A0BA100A01101 /* HabitListViewModel.swift in Sources */,
 				844755EB2D25BDAF00BAD40E /* WelcomeView.swift in Sources */,
+				842BF2342D2A10AD00A01101 /* HabitButtonViewModel.swift in Sources */,
 				844755E92D25BDAF00BAD40E /* MomentumApp.swift in Sources */,
+				842BF22F2D2A0F8900A01101 /* HabitButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
