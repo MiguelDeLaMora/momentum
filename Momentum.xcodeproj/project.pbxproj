@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842BF2292D2A0B7400A01101 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF2282D2A0B7400A01101 /* DeveloperPreview.swift */; };
+		842BF22B2D2A0B9100A01101 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF22A2D2A0B9100A01101 /* Habit.swift */; };
+		842BF22D2D2A0BA100A01101 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF22C2D2A0BA100A01101 /* HabitListViewModel.swift */; };
 		844755E92D25BDAF00BAD40E /* MomentumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755E82D25BDAF00BAD40E /* MomentumApp.swift */; };
 		844755EB2D25BDAF00BAD40E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755EA2D25BDAF00BAD40E /* WelcomeView.swift */; };
 		844755ED2D25BDB200BAD40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844755EC2D25BDB200BAD40E /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		842BF2282D2A0B7400A01101 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
+		842BF22A2D2A0B9100A01101 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		842BF22C2D2A0BA100A01101 /* HabitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewModel.swift; sourceTree = "<group>"; };
 		844755E52D25BDAF00BAD40E /* Momentum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momentum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844755E82D25BDAF00BAD40E /* MomentumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumApp.swift; sourceTree = "<group>"; };
 		844755EA2D25BDAF00BAD40E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -73,6 +79,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842BF2242D2A0AE100A01101 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				844755E82D25BDAF00BAD40E /* MomentumApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		842BF2252D2A0AFB00A01101 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				844755EA2D25BDAF00BAD40E /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		842BF2262D2A0B0600A01101 /* HabitList */ = {
+			isa = PBXGroup;
+			children = (
+				844756122D25C9A000BAD40E /* HabitListView.swift */,
+				842BF22A2D2A0B9100A01101 /* Habit.swift */,
+				842BF22C2D2A0BA100A01101 /* HabitListViewModel.swift */,
+			);
+			path = HabitList;
+			sourceTree = "<group>";
+		};
+		842BF2272D2A0B5C00A01101 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				842BF2282D2A0B7400A01101 /* DeveloperPreview.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		844755DC2D25BDAF00BAD40E = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +136,10 @@
 		844755E72D25BDAF00BAD40E /* Momentum */ = {
 			isa = PBXGroup;
 			children = (
-				844755E82D25BDAF00BAD40E /* MomentumApp.swift */,
-				844755EA2D25BDAF00BAD40E /* WelcomeView.swift */,
-				844756122D25C9A000BAD40E /* HabitListView.swift */,
+				842BF2272D2A0B5C00A01101 /* Extension */,
+				842BF2242D2A0AE100A01101 /* App */,
+				842BF2252D2A0AFB00A01101 /* Welcome */,
+				842BF2262D2A0B0600A01101 /* HabitList */,
 				844755EC2D25BDB200BAD40E /* Assets.xcassets */,
 				844755EE2D25BDB200BAD40E /* Preview Content */,
 			);
@@ -261,6 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				844756132D25C9A000BAD40E /* HabitListView.swift in Sources */,
+				842BF22B2D2A0B9100A01101 /* Habit.swift in Sources */,
+				842BF2292D2A0B7400A01101 /* DeveloperPreview.swift in Sources */,
+				842BF22D2D2A0BA100A01101 /* HabitListViewModel.swift in Sources */,
 				844755EB2D25BDAF00BAD40E /* WelcomeView.swift in Sources */,
 				844755E92D25BDAF00BAD40E /* MomentumApp.swift in Sources */,
 			);
