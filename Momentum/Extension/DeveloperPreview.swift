@@ -9,7 +9,7 @@ import Foundation
 
 struct DeveloperPreview {
     // MARK: - HABITS
-    static let habits: [Habit] = [
+    static var habits: [Habit] = [
         .init(
             id: NSUUID().uuidString,
             title: "Meditation",
