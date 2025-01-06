@@ -14,6 +14,7 @@
 		842BF2342D2A10AD00A01101 /* HabitButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF2332D2A10AD00A01101 /* HabitButtonViewModel.swift */; };
 		842BF2362D2A1BFF00A01101 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF2352D2A1BFF00A01101 /* AddHabitView.swift */; };
 		842BF2382D2A236300A01101 /* AddHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF2372D2A236300A01101 /* AddHabitViewModel.swift */; };
+		842BF23B2D2B6FED00A01101 /* HabitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842BF23A2D2B6FED00A01101 /* HabitService.swift */; };
 		844755E92D25BDAF00BAD40E /* MomentumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755E82D25BDAF00BAD40E /* MomentumApp.swift */; };
 		844755EB2D25BDAF00BAD40E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844755EA2D25BDAF00BAD40E /* WelcomeView.swift */; };
 		844755ED2D25BDB200BAD40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844755EC2D25BDB200BAD40E /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		842BF2332D2A10AD00A01101 /* HabitButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonViewModel.swift; sourceTree = "<group>"; };
 		842BF2352D2A1BFF00A01101 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 		842BF2372D2A236300A01101 /* AddHabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewModel.swift; sourceTree = "<group>"; };
+		842BF23A2D2B6FED00A01101 /* HabitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitService.swift; sourceTree = "<group>"; };
 		844755E52D25BDAF00BAD40E /* Momentum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momentum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844755E82D25BDAF00BAD40E /* MomentumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumApp.swift; sourceTree = "<group>"; };
 		844755EA2D25BDAF00BAD40E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		842BF2392D2B6FAF00A01101 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				842BF23A2D2B6FED00A01101 /* HabitService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		844755DC2D25BDAF00BAD40E = {
 			isa = PBXGroup;
 			children = (
@@ -172,10 +182,11 @@
 		844755E72D25BDAF00BAD40E /* Momentum */ = {
 			isa = PBXGroup;
 			children = (
-				842BF2272D2A0B5C00A01101 /* Extension */,
 				842BF2242D2A0AE100A01101 /* App */,
-				842BF2252D2A0AFB00A01101 /* Welcome */,
+				842BF2392D2B6FAF00A01101 /* Data */,
+				842BF2272D2A0B5C00A01101 /* Extension */,
 				842BF2262D2A0B0600A01101 /* HabitList */,
+				842BF2252D2A0AFB00A01101 /* Welcome */,
 				844755EC2D25BDB200BAD40E /* Assets.xcassets */,
 				844755EE2D25BDB200BAD40E /* Preview Content */,
 			);
@@ -339,6 +350,7 @@
 			files = (
 				844756132D25C9A000BAD40E /* HabitListView.swift in Sources */,
 				842BF22B2D2A0B9100A01101 /* Habit.swift in Sources */,
+				842BF23B2D2B6FED00A01101 /* HabitService.swift in Sources */,
 				842BF2292D2A0B7400A01101 /* DeveloperPreview.swift in Sources */,
 				842BF22D2D2A0BA100A01101 /* HabitListViewModel.swift in Sources */,
 				844755EB2D25BDAF00BAD40E /* WelcomeView.swift in Sources */,
